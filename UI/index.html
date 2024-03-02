@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maintenance tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav>
+        <label class="logo">M-Tracker</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <button type="button">Login</button>
+        </ul>
+    </nav>
+    <div>
+        <div class="hero-text">
+            <h1>Hello, How can we help?</h1>
+        </div>
+        <div class="search-box">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search for maintenance tips/ questions">
+        </div>   
+    </div>
+    <div class="ticket-container">
+        <div class="ticket">
+          <div class="icon-background">
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="ticket-info">
+            <h3>Submit a ticket</h3>
+            <p>Make maintenance and repairs request</p>
+          </div>
+        </div>
+        <div class="ticket">
+          <div class="icon-background">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <div class="ticket-info">
+            <h3>View existing tickets</h3>
+            <p>View tickets you submitted in the past</p>
+          </div>
+        </div>
+    </div>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="faq">
+            <div class="faq-question">
+                <h3>How long does it typically take to address different types of maintenance issues?</h3>
+            </div>
+            <!-- Hidden by default, shown when question is clicked -->
+            <div class="faq-answer">
+                <p>The time it takes to address maintenance issues can vary depending on the complexity of the issue...</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question">
+                <h3>How do I cancel or reschedule a maintenance appointment?</h3>
+            </div>
+            <div class="faq-answer">
+                <p>You can cancel or reschedule an appointment by contacting our support team...</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question">
+                <h3>How do I track the status of my maintenance request?</h3>
+            </div>
+            <div class="faq-answer">
+                <p>Track the status of your maintenance request by logging into your account...</p>
+            </div>
+        </div>
+    </div>
+    <div class="admin-panel-container">
+        <a href="/path-to-admin-dashboard" class="admin-panel-link">Go to Administration Panel</a>
+    </div>
+    
+</body>
+</html>
+
