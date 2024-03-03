@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submitticket.css">
+    <title>submit ticket</title>
+</head>
+<body>
+    <nav>
+        <label class="logo">M-Tracker</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <button type="button">Login</button>
+        </ul>
+    </nav>
+    <div>
+        <div class="hero-text">
+            <h1>Make maintenance or repairs requests</h1>
+        </div>
+        <div class="ticket-form-container">
+            <h2>Submit a Ticket</h2>
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueCategory">Issue Category:</label>
+                    <select id="issueCategory" name="issueCategory" required>
+                        <option value="">Select Issue Category</option>
+                        <option value="Plumbing issues">Clogged Pipes</option>
+                        <option value="Plumbing issues">Leaking faucets</option>
+                        <option value="Electrical Problems">Flickering lights</option>
+                        <option value="Appliance repairs">Malfunctioning refrigerators</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachments">Attachments:</label>
+                    <input type="file" id="attachments" name="attachments" multiple>
+                </div>
+                <div class="form-group">
+                    <label for="acknowledgment">
+                        <input type="checkbox" id="acknowledgment" name="acknowledgment" required>
+                        I confirm that the information provided is accurate.
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Ticket</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
